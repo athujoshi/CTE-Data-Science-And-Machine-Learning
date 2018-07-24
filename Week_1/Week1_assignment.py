@@ -131,3 +131,103 @@ def customer_login_func(*args, **kwargs):
     
 customer_prime_sum = customer_login_func() #Add arguments if any.
     
+
+
+
+#Part 3-Basic Matrix manipulations
+"""
+NumPy is one of the best ways to manipulate and do matrix operations in python.
+
+The following code will take you through the basics of NumPy
+
+"""
+
+import numpy as np#importing NumPy module with name as np
+
+#Initialising an array :
+
+#creating an 1d array:
+array1=np.array([2,3])
+print(array1)
+
+#creating an 2-d array:
+array2=np.array([[3,8],[5,6],[7,2]])
+print(array2)
+
+#getting the shape of an array
+print(array2.shape)
+
+#arange returns evenly spaced values within a given interval.
+array3 = np.arange(0, 15, 2) # start at 0 count up by 2, stop before 15
+print(array3)
+
+#reshaping an array
+#reshape returns an array with the same data with a new shape.
+array4=array2.reshape(2,3)
+print(array4)
+
+#resize changes the shape and size of array in-place.
+array2.resize(2, 3) #no_need to do array2 = array2.reshape(2,3)
+print(array2)
+
+#linspace returns evenly spaced numbers over a specified interval
+array5= np.linspace(0, 4, 9) # return 9 evenly spaced values from 0 to 4
+print(array5)
+
+#ones returns a new array of given shape and type, filled with ones.
+print(np.ones((3, 2)))
+
+#zeros returns a new array of given shape and type, filled with zeros.
+print(np.zeros((2, 3)))
+
+#eye returns a 2-D array with ones on the diagonal and zeros elsewhere.
+print(np.eye(3))
+
+#diag extracts a diagonal or constructs a diagonal array.
+array5=np.array([[3,4,5],[5,6,4],[45,23,43]])
+print(array5)
+print(" the diagonal array: ",np.diag(array5))
+
+#Create an array using repeating list (or see np.tile)
+array6=np.array([1, 2, 3] * 3)
+print(array6)
+
+#Repeat elements of an array using repeat.
+array7=np.repeat([1, 2, 3], 3)
+print(array7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
